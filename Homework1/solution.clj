@@ -24,7 +24,8 @@
                  (= iter numb) [numb]
              ))]
               (helper num 2) )) ]
-     (join-prime-factors n)
+
+    (if (or (= n 1) (= n 0)) [] (join-prime-factors n) )
     ))
 
 
